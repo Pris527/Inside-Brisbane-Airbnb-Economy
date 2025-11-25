@@ -9,7 +9,7 @@ This personal question became the foundation of a full analytical project: a Tab
 
 To answer this question, I began by doing an initial exploration on the different room types in Brisbane and their average prices(see image below)
 
-![Inside-Brisbane-Airbnb-Economy/Avg_Price_Roomtype.jpeg]
+![Avg_Price_Roomtype](F3A96832-1A24-468A-A424-D555E77B2855_1_201_a.jpeg)
 
 **Objective**
 
