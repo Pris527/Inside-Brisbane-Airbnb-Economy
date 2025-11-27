@@ -2,6 +2,7 @@
 **Demystifying Brisbane's Airbnb market: A data visualization project analyzing price, occupancy, and host performance to reveal optimal value across neighbourhoods.**
 
 **Overview**
+
 Before relocating to Brisbane, I wanted to understand how the Airbnb market worked across the city — which neighbourhoods were affordable, which generated high revenue, how room types differed, and what occupancy looked like throughout the year. 
 This personal question became the foundation of a full analytical project: a Tableau dashboard revealing how **price, occupancy**, and **host performance** vary across Brisbane. Thus, the main question this project seeks to answer is; 
 
