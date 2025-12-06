@@ -1,222 +1,173 @@
-# Inside-Brisbane-Airbnb-Economy
-**Demystifying Brisbane's Airbnb market: A data visualization project analyzing price, occupancy, and host performance to reveal optimal value across neighbourhoods.**
+**Inside Brisbane’s Airbnb Economy**
 
-**Overview**
-Before relocating to Brisbane, I wanted to understand how the Airbnb market worked across the city — which neighbourhoods were affordable, which generated high revenue, how room types differed, and what occupancy looked like throughout the year. 
-This personal question became the foundation of a full analytical project: a Tableau dashboard revealing how **price, occupancy**, and **host performance** vary across Brisbane. Thus, the main question this project seeks to answer is; 
+**A data visualization project uncovering pricing, occupancy behaviour, and host performance across Brisbane’s short-stay rental market**
 
-**How do pricing behaviour, listing distribution, and occupancy trends vary across Brisbane’s Airbnb market — and what can this tell hosts, investors, and future residents about short-term rental dynamics**
+---
 
-To answer this question, I began by doing an initial exploration on the different room types in Brisbane and their average prices(see image below)
+📌 **Project Overview — Why This Matters**
 
-![Avg_Price_Roomtype](F3A96832-1A24-468A-A424-D555E77B2855_1_201_a.jpeg)
+Airbnb continues to shape Brisbane’s housing and tourism economy — influencing affordability, neighbourhood character, and host profitability.
 
-**Objective**
+This dashboard tackles a key question:
 
-Specifically, this project aims to explore how Airbnb market characteristics differ across Brisbane’s neighbourhoods and room types, and to uncover insights relevant for:
+**How do Airbnb pricing, occupancy and host performance vary across Brisbane — and what does this mean for hosts, investors, and future residents?**
 
-. Prospective hosts
+This project originated from my own relocation planning — and evolved into a measurable look at short-stay market dynamics across the city.
 
-. Property investors
+---
 
-. Travellers looking for optimal value
+**🎯 Objective**
 
-. Analysts examining housing & tourism dynamics
+This project analyses Brisbane Airbnb data to understand:
 
-. The dashboard provides a clear picture of how **price, occupancy**, and **revenue potential** vary across the city.
+✔ Pricing differences across suburbs & room types
+✔ How well listings convert into bookings
+✔ Monthly revenue potential across the city
 
+Everything — from data manipulation to dashboard design — was completed directly in **Tableau Public**.
 
-**Tableau Public Dashboard:**[https://public.tableau.com/app/profile/presca.evans/viz/AirbnbBrisbanedataset/Dashboard1]
+---
 
-**Tools Used**
-**Tableau Public**
+📊 **Tableau Dashboard**
 
-. Data cleaning & preparation
+🔗 https://public.tableau.com/app/profile/presca.evans/viz/AirbnbBrisbanedataset/Dashboard1
 
-. Calculated fields (occupancy rate, average revenue, KPIs)
+---
 
-. Interactive filtering
 
-. Desktop  & mobile layout optimisation
+🧠 **Tools & Methods**
+🧠 **Tools & Methods**
 
-Since this dataset was lightweight and clean, the entire workflow was completed within Tableau.
+| Phase               | Approach                                                      |
+| ------------------- | ------------------------------------------------------------- |
+| Data Cleaning       | Filtering incomplete rows + standardising neighbourhood names |
+| Feature Engineering | Revenue + occupancy proxy calculations                        |
+| Visual Analysis     | Pricing, demand and performance segmentation                  |
+| Design              | Mobile-responsive dashboard + contextual tooltips             |
 
 
-**Methodology**
 
-Although this project was completed fully in Tableau, the workflow followed a structured analytical process:
+**Revenue Estimation Formula:**
 
-1. **Data Import & Initial Review**
+([Price] * 30 * 0.6) * [Reviews Per Month]
 
-. Loaded Brisbane Airbnb dataset into Tableau Public
+Review frequency used as a proxy for bookings, given dataset limitations.
 
-. Inspected variable quality (e.g., price fields, host counts, occupancy proxies)
+--- 
 
-2. **Data Cleaning in Tableau**
+📌 **Key Performance Indicators (from Dashboard)**
 
-. Removed incomplete or unusable records
+| Metric                  |      Value |
+| ----------------------- | ---------: |
+| Total Listings          |  **5,695** |
+| Total Hosts             |  **2,600** |
+| Average Price           |   **$220** |
+| Average Monthly Revenue | **$6,834** |
 
-. Standardised neighbourhood names
+---
 
-. Created calculated fields:
-    . Monthly revenue
+🖼 **Sample Visual Evidence**
 
-    . Occupancy rates
+**Room Type Pricing**
 
-    . KPI metrics
+![Avg_Price_Roomtype](Images/Room_Type_Pricing.jpeg)
 
-3. **Visual Development**
 
-. Built multiple exploratory sheets:
+**Price vs Occupancy Scatter Plot** (📌 upload pending)
 
-    . Price by room type
+![Price_Occupancy](Images/Occupancy_Rate_Price.jpeg)
 
-    . Listings by neighbourhood
+---
 
-    . Revenue and price over time (dual-axis)
+🔍 **Key Insights**
 
-    . Occupancy vs. price scatter plot
+📌 **Entire homes command higher prices — but not higher occupancy**
+Mid-priced listings often outperform on demand.
 
-. Added filters for dynamic exploration (Neighbourhood, Room Type)
+📌 **Central suburbs dominate supply & revenue**
+Location convenience drives performance.
 
+📌 **Revenue is more seasonal than price**
+Demand rises and falls with tourism rhythms.
 
-4. **Dashboard Assembly**
+📌 **Pricing strategy must balance competition**
+High price ≠ high returns.
 
-. Applied a consistent design style
+📌 **Market shows clear segmentation**
+Traveller preferences differ by neighbourhood & listing type.
 
-. Added KPIs, colour rules, and mobile responsiveness
+These insights support decision-making for:
 
-. Wrote tooltips that explain data context
+• Hosts setting competitive pricing
+• Investors assessing property strategy
+• Housing & tourism analysts monitoring short-stays
 
+---
 
-**Dashboard Features**
 
-. **KPI Summary:**
-Total Listings | Average Price | Average Monthly Revenue | Total Hosts
+⚠ **Critical Data Limitation** 
 
-. **Interactive Filters:**
-Neighbourhood • Room Type • Price Range
+This dataset reflects **Airbnb listings only**, excluding hotels and other short-stay options.
 
-. **Visuals Included:**
-    . Average price by room type
+Underrepresentation of hotels means:
 
-    . Listing distribution by neighbourhood
+• Airbnb occupancy appears **inflated**
 
-    . Monthly revenue & pricing trends
+• Competitive pressure is **understated**
 
-    . Occupancy vs price scatter plot
+• Market conclusions must be interpreted cautiously
 
+Additionally:
 
-**Key Insights and Visualisation**
+Data is a **snapshot in time**, not continuously refreshed
+→ Insights show **market structure**, not current season-specific performance
 
-**1. Room Type Pricing & Demand**
+---
 
-Entire homes and private rooms dominate the market, but their pricing differs substantially.
-Some neighbourhoods show premium pricing with only moderate occupancy, suggesting competition or oversupply.
+🚀 **Future Enhancements**
 
+• Add geospatial mapping of density + revenue patterns
 
-**2. Neighbourhood Variation**
+• Cluster listings by amenities and pricing power
 
-A clear divide exists between inner-city suburbs and outer suburbs:
+• Integrate hotel capacity + tourism demand (ABS / Queensland data)
 
-. Central areas attract higher listing density
+• Seasonal decomposition → identify peak vs slump drivers
 
-. Some fringe suburbs offer high value-for-money with competitive occupancy
+• Host-focused recommendations, e.g., “optimal price band by suburb”
 
-The neighbourhood patterns reflect socioeconomic diversity, tourism access, and local housing dynamics.
+• Neighbourhood context profiles (universities, CBD access, event venues)
 
-**3. Revenue & Seasonal Patterns**
+These align with a clear skill-development pathway while strengthening real-world value.
 
-The dual-axis chart reveals noticeable trends:
+---
 
-. Monthly revenue fluctuates more sharply than price
 
-. Demand appears to shift with seasonal and event-based activity
+📁 **Repository Structure**
 
-**4. Pricing vs Occupancy Relationship**
+Inside-Brisbane-Airbnb-Economy
+│
+├── README.md
+├── images
+│    ├── Room_Type_Pricing.jpeg
+│    ├── price_vs_occupancy.jpeg (to add)
+│
+└── Data
+     ├── listings_Brisbane.csv
 
-. Scatter plot analysis shows that higher price ≠ higher occupancy.
-. Optimal pricing requires balancing host strategy with neighbourhood competitiveness.
-. Mid-priced listings often perform more consistently. This insight can support host pricing strategies.
+---
 
+🧍‍♀️ **Author**
 
-**Future Enhancements**
+**Dr. Presca Evans** — Data Analyst & Mixed-Methods Researcher
+Focused on making service-access systems clearer, fairer & more human-centred.
+📌 Relocating to Brisbane · December 2025
 
-To strengthen the analytical depth of this project, future improvements may include:
 
-1. **Expand Analysis Using Listing Amenities**
-Airbnb amenities (e.g., Wi-Fi, parking, air conditioning, pools) play a major role in pricing and occupancy.
-A future version of this dashboard will include:
 
--  Amenity frequency for each neighbourhood
 
--  Relationship between specific amenities and higher prices
 
--  Amenity-based clustering of high-performing listings
 
--  Visual filtering by amenities (e.g., “Show me all listings with free parking”)
 
-This would allow prospective hosts or investors to understand which amenities yield the strongest returns in Brisbane.
 
-2. **Improve Data Quality for Hotels & Non-Airbnb Accommodation**
-The current dataset shows limited coverage of hotel rooms, which underrepresents the full short-stay accommodation market.
-Future improvements include:
-
-. Supplementing Airbnb data with official hotel capacity datasets (ABS, tourism reports, Queensland government open data)
-
-. Comparing Airbnb performance to nearby hotels
-
-    . Enhancing market-level insights, such as:
-
-    . Price comparison (Airbnb vs hotels)
-
-    . Occupancy comparison
-
-    . Neighbourhoods where hotels dominate the supply
-
-This will make the dashboard more accurate and useful for analysts evaluating competition in the short-stay rental market.
-
-3. **Seasonality & Trend Decomposition**
-Using Tableau forecasting tools to breakdown: 
-
-. Peak demand periods
-
-. Event-driven surges
-
-. Seasonal low-points
-
-4. **Neighbourhood Profiles**
-Add a short narrative explaining neighbourhood characteristics (proximity to CBD, beaches, universities) to help map Airbnb performance to real-world context.
-
-5. **Host Strategy Insights**
-Create a second dashboard page tailored to prospective hosts, offering:
-
-. Recommended neighbourhoods
-
-. Price bands with consistently strong occupancy
-
-. Amenity combinations associated with above-average performance
-
-Apart from these, other suggestions for future enhancements may include; 
-.  Adding neighbourhood-level socio-economic context (housing pressure, visitor demand, commuting patterns)
-.  Adding a map view for listing density if coordinates become available. 
-
-These enhancements would deepen the interpretive value while matching the progression of my analytics skill set.
-
-
-**Takeaway**
-
-This project demonstrates my ability to translate a real-world question into an analytical framework using Tableau.
-
-It reflects a blend of:
-
-    . Social science research thinking
-
-    . Analytical reasoning
-
-    . Visual communication
-
-    . Practical interpretation for business or policy contexts
-
-Whether used by a host evaluating pricing strategy or a data team assessing housing trends, the dashboard brings clarity to Brisbane’s Airbnb activity.
 
