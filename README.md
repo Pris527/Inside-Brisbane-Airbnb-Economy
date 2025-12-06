@@ -1,4 +1,4 @@
-**Inside Brisbane’s Airbnb Economy**
+**Inside Brisbane’s Airbnb Economy** 
 
 **A data visualization project uncovering pricing, occupancy behaviour, and host performance across Brisbane’s short-stay rental market**
 
